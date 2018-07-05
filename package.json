@@ -1,14 +1,16 @@
 {
   "private": true,
   "scripts": {
-    "build": "lerna run --stream --scope pwac* build",
-    "test": "lerna run --concurrency 1 --stream --scope pwac* test",
-    "lint": "lerna run --stream lint"
+    "release": "workspace-version",
+    "build": "yarn wsrun build --stages --exclude example-react --exclude example-elm",
+    "lint": "yarn wsrun lint",
+    "test": "yarn wsrun test --serial --exclude-missing"
   },
   "workspaces": [
     "packages/*"
   ],
   "devDependencies": {
-    "lerna": "^2.11.0"
+    "workspace-release": "^0.4.3",
+    "wsrun": "^2.2.1"
   }
 }

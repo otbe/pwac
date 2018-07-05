@@ -2,17 +2,17 @@
 
 exports[`Compiler (react) should build the example with config complete.json 1`] = `
 Object {
-  "1.5c06566be3823ab641ec.css": "294e247516d839373ffb20d684cf3db5",
-  "1.5c06566be3823ab641ec.js": "18e6ce3a1b034b5467d6dfd3a77468c6",
+  "1.eef2f26e7c6cffc35170.css": "294e247516d839373ffb20d684cf3db5",
+  "1.eef2f26e7c6cffc35170.js": "f53467ef6c34ee6ecbb9f6b8cec1fee0",
   "240683d2dd7c5a158ee48c70703a2a0a-1200.jpg": "240683d2dd7c5a158ee48c70703a2a0a",
   "3.724e9291ed4ab29de160.js": "2d35d14bde9e55644e181a7615fbe672",
   "5c917367a9adfba3f1e904ed920580be-600.jpg": "5c917367a9adfba3f1e904ed920580be",
   "8f42a999073e8fe5caf83406f0e1d690-1920.jpg": "8f42a999073e8fe5caf83406f0e1d690",
   "c29e3724f0ae14c777b61c09ee20e73b-300.jpg": "c29e3724f0ae14c777b61c09ee20e73b",
-  "index.html": "a328bb113ef8dc38d8f3651b972214a4",
+  "index.html": "ce32f8b9171528b05d5badb35131233f",
   "main.5d12953204b136405d82.css": "7861def0e3928a6ff8b473840ce73a4e",
   "main.5d12953204b136405d82.js": "742ca09bf2997db4ad3320d35b5aa852",
-  "manifest.a958e7bd1a75a46c9cc1.js": "f4c1ce82fd1f31ea7c1bbfeecc59d738",
+  "manifest.15bac73b692621ecbfe3.js": "2fb12bc750f97f7990004e5348c86b1f",
   "vendors.ee99a0e111454a1372c2.css": "5f622c70ad714c19d4d4ff863401721f",
   "vendors.ee99a0e111454a1372c2.js": "a9416f6aaf23c1e51cb1a13503a11432",
 }
@@ -20,14 +20,14 @@ Object {
 
 exports[`Compiler (react) should build the example with config disabled.json 1`] = `
 Object {
-  "1.5c06566be3823ab641ec.css": "294e247516d839373ffb20d684cf3db5",
-  "1.5c06566be3823ab641ec.js": "18e6ce3a1b034b5467d6dfd3a77468c6",
+  "1.eef2f26e7c6cffc35170.css": "294e247516d839373ffb20d684cf3db5",
+  "1.eef2f26e7c6cffc35170.js": "f53467ef6c34ee6ecbb9f6b8cec1fee0",
   "3.724e9291ed4ab29de160.js": "2d35d14bde9e55644e181a7615fbe672",
   "b02330cbe0a6272c907bdb4e12b97b7c.jpg": "be5bdc38e858972b37353622a1079182",
-  "index.html": "1abb777d08ee323821af7c8c82fa3bc2",
+  "index.html": "de5520b5d529e23be2f635a0d971870c",
   "main.3d951a173db1d53b305b.css": "7861def0e3928a6ff8b473840ce73a4e",
   "main.3d951a173db1d53b305b.js": "6dfc3f34c0752c2532561dda0cde42ff",
-  "manifest.a958e7bd1a75a46c9cc1.js": "f4c1ce82fd1f31ea7c1bbfeecc59d738",
+  "manifest.15bac73b692621ecbfe3.js": "2fb12bc750f97f7990004e5348c86b1f",
   "vendors.ee99a0e111454a1372c2.css": "5f622c70ad714c19d4d4ff863401721f",
   "vendors.ee99a0e111454a1372c2.js": "a9416f6aaf23c1e51cb1a13503a11432",
 }
@@ -35,22 +35,22 @@ Object {
 
 exports[`Compiler (react) should build the example with config from package.json 1`] = `
 Object {
-  "1.5c06566be3823ab641ec.css": "294e247516d839373ffb20d684cf3db5",
-  "1.5c06566be3823ab641ec.js": "18e6ce3a1b034b5467d6dfd3a77468c6",
+  "1.eef2f26e7c6cffc35170.css": "294e247516d839373ffb20d684cf3db5",
+  "1.eef2f26e7c6cffc35170.js": "f53467ef6c34ee6ecbb9f6b8cec1fee0",
   "240683d2dd7c5a158ee48c70703a2a0a-1200.jpg": "240683d2dd7c5a158ee48c70703a2a0a",
   "3.724e9291ed4ab29de160.js": "2d35d14bde9e55644e181a7615fbe672",
   "5c917367a9adfba3f1e904ed920580be-600.jpg": "5c917367a9adfba3f1e904ed920580be",
   "8f42a999073e8fe5caf83406f0e1d690-1920.jpg": "8f42a999073e8fe5caf83406f0e1d690",
-  "bar/index.html": "cec4f1499d457f9c58223c80823090cd",
+  "bar/index.html": "a007f224080f53245a0e806b64806cac",
   "c29e3724f0ae14c777b61c09ee20e73b-300.jpg": "c29e3724f0ae14c777b61c09ee20e73b",
   "icon_128x128.deb0a118869f6d69fcc5e9852ad32d81.png": "deb0a118869f6d69fcc5e9852ad32d81",
   "icon_192x192.f5d0f0f2ed01fca7cb69e70f6af11529.png": "f5d0f0f2ed01fca7cb69e70f6af11529",
   "icon_256x256.4661d370dd248c9f9d48e78c8a07776d.png": "4661d370dd248c9f9d48e78c8a07776d",
   "icon_96x96.1c0003f895382900e1a8ce6fa0a1b672.png": "1c0003f895382900e1a8ce6fa0a1b672",
-  "index.html": "430ccae4d218d69bda973d6b24306888",
+  "index.html": "905e40fb74f7de07d7881088530fce3a",
   "main.5d12953204b136405d82.css": "7861def0e3928a6ff8b473840ce73a4e",
   "main.5d12953204b136405d82.js": "742ca09bf2997db4ad3320d35b5aa852",
-  "manifest.a958e7bd1a75a46c9cc1.js": "f4c1ce82fd1f31ea7c1bbfeecc59d738",
+  "manifest.15bac73b692621ecbfe3.js": "2fb12bc750f97f7990004e5348c86b1f",
   "manifest.bc9f52edf87c052e960e4516d360c190.json": "bc9f52edf87c052e960e4516d360c190",
   "vendors.ee99a0e111454a1372c2.css": "5f622c70ad714c19d4d4ff863401721f",
   "vendors.ee99a0e111454a1372c2.js": "a9416f6aaf23c1e51cb1a13503a11432",
@@ -59,14 +59,14 @@ Object {
 
 exports[`Compiler (react) should build the example with config image-optimization-disabled.json 1`] = `
 Object {
-  "1.5c06566be3823ab641ec.css": "294e247516d839373ffb20d684cf3db5",
-  "1.5c06566be3823ab641ec.js": "18e6ce3a1b034b5467d6dfd3a77468c6",
+  "1.eef2f26e7c6cffc35170.css": "294e247516d839373ffb20d684cf3db5",
+  "1.eef2f26e7c6cffc35170.js": "f53467ef6c34ee6ecbb9f6b8cec1fee0",
   "3.724e9291ed4ab29de160.js": "2d35d14bde9e55644e181a7615fbe672",
   "b02330cbe0a6272c907bdb4e12b97b7c.jpg": "be5bdc38e858972b37353622a1079182",
-  "index.html": "15d8b9cb6c0344b1f58e49de5eecbd85",
+  "index.html": "d85ea5dec5be0154a1e8d80373e3e54f",
   "main.3d951a173db1d53b305b.css": "7861def0e3928a6ff8b473840ce73a4e",
   "main.3d951a173db1d53b305b.js": "6dfc3f34c0752c2532561dda0cde42ff",
-  "manifest.a958e7bd1a75a46c9cc1.js": "f4c1ce82fd1f31ea7c1bbfeecc59d738",
+  "manifest.15bac73b692621ecbfe3.js": "2fb12bc750f97f7990004e5348c86b1f",
   "vendors.ee99a0e111454a1372c2.css": "5f622c70ad714c19d4d4ff863401721f",
   "vendors.ee99a0e111454a1372c2.js": "a9416f6aaf23c1e51cb1a13503a11432",
 }
@@ -74,18 +74,18 @@ Object {
 
 exports[`Compiler (react) should build the example with config manifest.json 1`] = `
 Object {
-  "1.5c06566be3823ab641ec.css": "294e247516d839373ffb20d684cf3db5",
-  "1.5c06566be3823ab641ec.js": "18e6ce3a1b034b5467d6dfd3a77468c6",
+  "1.eef2f26e7c6cffc35170.css": "294e247516d839373ffb20d684cf3db5",
+  "1.eef2f26e7c6cffc35170.js": "f53467ef6c34ee6ecbb9f6b8cec1fee0",
   "3.724e9291ed4ab29de160.js": "2d35d14bde9e55644e181a7615fbe672",
   "b02330cbe0a6272c907bdb4e12b97b7c.jpg": "be5bdc38e858972b37353622a1079182",
   "icon_128x128.deb0a118869f6d69fcc5e9852ad32d81.png": "deb0a118869f6d69fcc5e9852ad32d81",
   "icon_192x192.f5d0f0f2ed01fca7cb69e70f6af11529.png": "f5d0f0f2ed01fca7cb69e70f6af11529",
   "icon_256x256.4661d370dd248c9f9d48e78c8a07776d.png": "4661d370dd248c9f9d48e78c8a07776d",
   "icon_96x96.1c0003f895382900e1a8ce6fa0a1b672.png": "1c0003f895382900e1a8ce6fa0a1b672",
-  "index.html": "36165b2fd79fa1dad0a96047c808f8c1",
+  "index.html": "7e267f722d8c671935ad466719230f07",
   "main.3d951a173db1d53b305b.css": "7861def0e3928a6ff8b473840ce73a4e",
   "main.3d951a173db1d53b305b.js": "6dfc3f34c0752c2532561dda0cde42ff",
-  "manifest.a958e7bd1a75a46c9cc1.js": "f4c1ce82fd1f31ea7c1bbfeecc59d738",
+  "manifest.15bac73b692621ecbfe3.js": "2fb12bc750f97f7990004e5348c86b1f",
   "manifest.bc9f52edf87c052e960e4516d360c190.json": "bc9f52edf87c052e960e4516d360c190",
   "vendors.ee99a0e111454a1372c2.css": "5f622c70ad714c19d4d4ff863401721f",
   "vendors.ee99a0e111454a1372c2.js": "a9416f6aaf23c1e51cb1a13503a11432",
@@ -94,17 +94,17 @@ Object {
 
 exports[`Compiler (react) should build the example with config prerender-disabled.json 1`] = `
 Object {
-  "1.5c06566be3823ab641ec.css": "294e247516d839373ffb20d684cf3db5",
-  "1.5c06566be3823ab641ec.js": "18e6ce3a1b034b5467d6dfd3a77468c6",
+  "1.eef2f26e7c6cffc35170.css": "294e247516d839373ffb20d684cf3db5",
+  "1.eef2f26e7c6cffc35170.js": "f53467ef6c34ee6ecbb9f6b8cec1fee0",
   "240683d2dd7c5a158ee48c70703a2a0a-1200.jpg": "240683d2dd7c5a158ee48c70703a2a0a",
   "3.724e9291ed4ab29de160.js": "2d35d14bde9e55644e181a7615fbe672",
   "5c917367a9adfba3f1e904ed920580be-600.jpg": "5c917367a9adfba3f1e904ed920580be",
   "8f42a999073e8fe5caf83406f0e1d690-1920.jpg": "8f42a999073e8fe5caf83406f0e1d690",
   "c29e3724f0ae14c777b61c09ee20e73b-300.jpg": "c29e3724f0ae14c777b61c09ee20e73b",
-  "index.html": "295cc6d61b8fff57127f52d2c7c87da7",
+  "index.html": "104439be338a9f87eacfab60344e8c5f",
   "main.5d12953204b136405d82.css": "7861def0e3928a6ff8b473840ce73a4e",
   "main.5d12953204b136405d82.js": "742ca09bf2997db4ad3320d35b5aa852",
-  "manifest.a958e7bd1a75a46c9cc1.js": "f4c1ce82fd1f31ea7c1bbfeecc59d738",
+  "manifest.15bac73b692621ecbfe3.js": "2fb12bc750f97f7990004e5348c86b1f",
   "vendors.ee99a0e111454a1372c2.css": "5f622c70ad714c19d4d4ff863401721f",
   "vendors.ee99a0e111454a1372c2.js": "a9416f6aaf23c1e51cb1a13503a11432",
 }
