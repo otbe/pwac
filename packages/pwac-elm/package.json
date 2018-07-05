@@ -19,6 +19,10 @@
     "url": "https://github.com/otbe/pwac/issues"
   },
   "homepage": "https://github.com/otbe/pwac#readme",
+  "files": [
+    "config",
+    "dist"
+  ],
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {

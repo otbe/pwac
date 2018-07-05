@@ -3,8 +3,8 @@
   "scripts": {
     "release": "workspace-version",
     "build": "yarn wsrun build --stages --exclude example-react --exclude example-elm",
-    "lint": "yarn wsrun lint",
-    "test": "yarn wsrun test --serial --exclude-missing"
+    "lint": "yarn wsrun lint --fast-exit",
+    "test": "yarn wsrun test --serial --exclude-missing --fast-exit"
   },
   "workspaces": [
     "packages/*"

@@ -24,6 +24,10 @@
   "bin": {
     "pwac": "./bin/index.js"
   },
+  "files": [
+    "bin",
+    "dist"
+  ],
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
