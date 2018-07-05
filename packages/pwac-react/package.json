@@ -30,6 +30,9 @@
     "lint": "prettier-tslint check '{src,tests}/**/*.ts'",
     "lint:fix": "prettier-tslint fix '{src,tests}/**/*.ts'"
   },
+  "peerDependencies": {
+    "react": "^16.0.0"
+  },
   "devDependencies": {
     "@types/jest": "^23.1.4",
     "ajv": "^6.5.2",
