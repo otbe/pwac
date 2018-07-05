@@ -1,0 +1,19 @@
+{
+  "env": "react",
+  "browsers": [
+    ">2%"
+  ],
+  "images": {
+    "sizes": [
+      300,
+      600,
+      1200,
+      2000
+    ]
+  },
+  "prerender": {
+    "routes": [
+      "/"
+    ]
+  }
+}

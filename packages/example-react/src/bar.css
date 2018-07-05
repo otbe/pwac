@@ -1,0 +1,8 @@
+.bar {
+  display: flex;
+  color: red;
+}
+
+::placeholder {
+  color: gray;
+}

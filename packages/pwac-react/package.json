@@ -1,0 +1,77 @@
+{
+  "name": "pwac-react",
+  "version": "1.0.0",
+  "description": "react environment for pwac",
+  "keywords": [
+    "TypeScript",
+    "pwa",
+    "compiler",
+    "react",
+    "css modules",
+    "critical"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/otbe/pwac.git"
+  },
+  "author": "Benjamin Otto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/otbe/pwac/issues"
+  },
+  "homepage": "https://github.com/otbe/pwac#readme",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc && typescript-json-schema src/common.ts ReactConfig > config/schema.json",
+    "watch": "tsc -w",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "prettier-tslint check '{src,tests}/**/*.ts'",
+    "lint:fix": "prettier-tslint fix '{src,tests}/**/*.ts'"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.1.4",
+    "ajv": "^6.5.2",
+    "ajv-keywords": "^3.2.0",
+    "jest": "^23.2.0",
+    "prettier": "^1.13.7",
+    "prettier-tslint": "^0.4.0",
+    "snapshot-dir": "^1.1.2",
+    "ts-jest": "^23.0.0",
+    "typescript": "^2.9.2",
+    "typescript-json-schema": "^0.25.1"
+  },
+  "dependencies": {
+    "@babel/core": "^7.0.0-beta.51",
+    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.51",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.51",
+    "@babel/preset-env": "^7.0.0-beta.51",
+    "@babel/preset-react": "^7.0.0-beta.51",
+    "@babel/preset-stage-0": "^7.0.0-beta.51",
+    "@babel/preset-typescript": "^7.0.0-beta.51",
+    "ajv": "^6.5.2",
+    "autoprefixer": "^8.6.4",
+    "babel-loader": "^8.0.0-beta.4",
+    "css-loader": "^0.28.11",
+    "file-loader": "^1.1.11",
+    "html-critical-webpack-plugin": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "imagemin-webpack-plugin": "^2.1.1",
+    "mini-css-extract-plugin": "^0.4.1",
+    "offline-plugin": "^5.0.5",
+    "optimize-css-assets-webpack-plugin": "^4.0.3",
+    "postcss-loader": "^2.1.4",
+    "prerender-spa-plugin": "^3.2.1",
+    "react-hot-loader": "^4.3.3",
+    "react-loadable": "^5.4.0",
+    "responsive-loader": "^1.1.0",
+    "sharp": "^0.20.5",
+    "style-loader": "^0.21.0",
+    "typescript": "^2.9.2",
+    "typings-for-css-modules-loader": "^1.7.0",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.14.0",
+    "webpack-pwa-manifest": "^3.6.2"
+  }
+}

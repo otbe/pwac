@@ -1,0 +1,12 @@
+# common
+.DS_Store
+
+yarn-error.log
+
+node_modules/
+dist/
+elm-stuff/
+
+lerna-debug.log
+
+.vscode

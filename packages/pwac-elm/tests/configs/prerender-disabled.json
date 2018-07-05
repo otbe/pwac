@@ -1,0 +1,8 @@
+{
+  "env": "elm",
+  "browsers": [">2%"],
+  "assets": {
+    "package": "elm-community/elm-webpack-loader"
+  },
+  "prerender": false
+}

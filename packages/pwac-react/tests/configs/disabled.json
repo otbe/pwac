@@ -1,0 +1,8 @@
+{
+  "env": "react",
+  "browsers": [
+    ">2%"
+  ],
+  "images": false,
+  "prerender": false
+}

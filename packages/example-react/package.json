@@ -1,0 +1,65 @@
+{
+  "name": "example-react",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "watch": "pwac watch",
+    "build": "pwac build",
+    "lint": "prettier-tslint check '{src,tests}/**/*.{ts,tsx}'",
+    "lint:fix": "prettier-tslint fix '{src,tests}/**/*.{ts,tsx}'"
+  },
+  "pwac": {
+    "env": "react",
+    "images": {
+      "sizes": [
+        300,
+        600,
+        1200,
+        2000
+      ]
+    },
+    "browsers": [
+      ">2%"
+    ],
+    "prerender": {
+      "routes": [
+        "/",
+        "/bar"
+      ]
+    },
+    "manifest": {
+      "name": "My Progressive Web App",
+      "short_name": "MyPWA",
+      "description": "My awesome Progressive Web App!",
+      "background_color": "#ffffff",
+      "icons": [
+        {
+          "src": "src/assets/icon.png",
+          "sizes": [
+            96,
+            128,
+            192,
+            256
+          ]
+        }
+      ]
+    }
+  },
+  "devDependencies": {
+    "prettier": "^1.13.7",
+    "prettier-tslint": "^0.4.0",
+    "pwac": "*",
+    "pwac-react": "*"
+  },
+  "dependencies": {
+    "@types/react": "^16.4.6",
+    "@types/react-dom": "^16.0.6",
+    "@types/react-loadable": "^5.4.0",
+    "@types/react-router-dom": "^4.2.7",
+    "normalize.css": "^8.0.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-loadable": "^5.4.0",
+    "react-router-dom": "^4.3.1"
+  }
+}

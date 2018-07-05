@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Project configuation should accept config file path via env 1`] = `
+Object {
+  "browsers": Array [
+    ">2%",
+  ],
+  "env": "react",
+  "images": Object {
+    "sizes": Array [
+      300,
+      600,
+      1200,
+      2000,
+    ],
+  },
+  "prerender": Object {
+    "routes": Array [
+      "/",
+    ],
+  },
+}
+`;

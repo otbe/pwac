@@ -1,0 +1,62 @@
+{
+  "name": "example-elm",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "install": "elm package install -y",
+    "watch": "pwac watch",
+    "build": "pwac build",
+    "lint": "prettier-tslint check '{src,tests}/**/*.{ts,tsx}'",
+    "lint:fix": "prettier-tslint fix '{src,tests}/**/*.{ts,tsx}' && elm-format src/ --yes"
+  },
+  "pwac": {
+    "env": "elm",
+    "assets": {
+      "package": "elm-community/elm-webpack-loader"
+    },
+    "images": {
+      "sizes": [
+        300,
+        600,
+        1200,
+        2000
+      ]
+    },
+    "browsers": [
+      ">2%"
+    ],
+    "prerender": {
+      "routes": [
+        "/"
+      ]
+    },
+    "manifest": {
+      "name": "My Progressive Web App",
+      "short_name": "MyPWA",
+      "description": "My awesome Progressive Web App!",
+      "background_color": "#ffffff",
+      "icons": [
+        {
+          "src": "src/assets/icon.png",
+          "sizes": [
+            96,
+            128,
+            192,
+            256
+          ]
+        }
+      ]
+    }
+  },
+  "devDependencies": {
+    "elm-format": "^0.6.1-alpha",
+    "prettier": "^1.13.7",
+    "prettier-tslint": "^0.4.0",
+    "pwac": "*",
+    "pwac-elm": "*",
+    "typescript": "^2.9.2"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.0"
+  }
+}

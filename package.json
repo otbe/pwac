@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "lerna run --stream --scope pwac* build",
+    "test": "lerna run --concurrency 1 --stream --scope pwac* test",
+    "lint": "lerna run --stream lint"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^2.11.0"
+  }
+}

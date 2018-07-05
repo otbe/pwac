@@ -1,0 +1,20 @@
+{
+  "env": "elm",
+  "browsers": [">2%"],
+  "prerender": false,
+  "assets": {
+    "package": "elm-community/elm-webpack-loader"
+  },
+  "manifest": {
+    "name": "My Progressive Web App",
+    "short_name": "MyPWA",
+    "description": "My awesome Progressive Web App!",
+    "background_color": "#ffffff",
+    "icons": [
+      {
+        "src": "src/assets/icon.png",
+        "sizes": [96, 128, 192, 256]
+      }
+    ]
+  }
+}

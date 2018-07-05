@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Compiler (elm) should build the example with config complete.json 1`] = `
+Object {
+  "b02330cbe0a6272c907bdb4e12b97b7c.jpg": "be5bdc38e858972b37353622a1079182",
+  "elm.d138c88ed3811a39d525.js": "87536348363f9cd55f9930f67fe376b2",
+  "index.html": "118155e51b024dbb7f0319fcba292eb8",
+  "main.c72487abd12a3ca6d343.css": "5f622c70ad714c19d4d4ff863401721f",
+  "main.c72487abd12a3ca6d343.js": "90e74906e1a8e4c29088a2261ad94ac4",
+  "manifest.04da2eac0dbe51865ee7.js": "01c8731923a46c30aaed248b3d094785",
+}
+`;
+
+exports[`Compiler (elm) should build the example with config disabled.json 1`] = `
+Object {
+  "b02330cbe0a6272c907bdb4e12b97b7c.jpg": "be5bdc38e858972b37353622a1079182",
+  "elm.d138c88ed3811a39d525.js": "87536348363f9cd55f9930f67fe376b2",
+  "index.html": "ef56a0388822659f514e73075a9dbcc7",
+  "main.c72487abd12a3ca6d343.css": "5f622c70ad714c19d4d4ff863401721f",
+  "main.c72487abd12a3ca6d343.js": "90e74906e1a8e4c29088a2261ad94ac4",
+  "manifest.04da2eac0dbe51865ee7.js": "01c8731923a46c30aaed248b3d094785",
+}
+`;
+
+exports[`Compiler (elm) should build the example with config from package.json 1`] = `
+Object {
+  "b02330cbe0a6272c907bdb4e12b97b7c.jpg": "be5bdc38e858972b37353622a1079182",
+  "elm.d138c88ed3811a39d525.js": "87536348363f9cd55f9930f67fe376b2",
+  "icon_128x128.deb0a118869f6d69fcc5e9852ad32d81.png": "deb0a118869f6d69fcc5e9852ad32d81",
+  "icon_192x192.f5d0f0f2ed01fca7cb69e70f6af11529.png": "f5d0f0f2ed01fca7cb69e70f6af11529",
+  "icon_256x256.4661d370dd248c9f9d48e78c8a07776d.png": "4661d370dd248c9f9d48e78c8a07776d",
+  "icon_96x96.1c0003f895382900e1a8ce6fa0a1b672.png": "1c0003f895382900e1a8ce6fa0a1b672",
+  "index.html": "3d6a88f0abd8389ccb6cd1be3a37a07c",
+  "main.c72487abd12a3ca6d343.css": "5f622c70ad714c19d4d4ff863401721f",
+  "main.c72487abd12a3ca6d343.js": "90e74906e1a8e4c29088a2261ad94ac4",
+  "manifest.04da2eac0dbe51865ee7.js": "01c8731923a46c30aaed248b3d094785",
+  "manifest.bc9f52edf87c052e960e4516d360c190.json": "bc9f52edf87c052e960e4516d360c190",
+}
+`;
+
+exports[`Compiler (elm) should build the example with config image-optimization-disabled.json 1`] = `
+Object {
+  "b02330cbe0a6272c907bdb4e12b97b7c.jpg": "be5bdc38e858972b37353622a1079182",
+  "elm.d138c88ed3811a39d525.js": "87536348363f9cd55f9930f67fe376b2",
+  "index.html": "118155e51b024dbb7f0319fcba292eb8",
+  "main.c72487abd12a3ca6d343.css": "5f622c70ad714c19d4d4ff863401721f",
+  "main.c72487abd12a3ca6d343.js": "90e74906e1a8e4c29088a2261ad94ac4",
+  "manifest.04da2eac0dbe51865ee7.js": "01c8731923a46c30aaed248b3d094785",
+}
+`;
+
+exports[`Compiler (elm) should build the example with config manifest.json 1`] = `
+Object {
+  "b02330cbe0a6272c907bdb4e12b97b7c.jpg": "be5bdc38e858972b37353622a1079182",
+  "elm.d138c88ed3811a39d525.js": "87536348363f9cd55f9930f67fe376b2",
+  "icon_128x128.deb0a118869f6d69fcc5e9852ad32d81.png": "deb0a118869f6d69fcc5e9852ad32d81",
+  "icon_192x192.f5d0f0f2ed01fca7cb69e70f6af11529.png": "f5d0f0f2ed01fca7cb69e70f6af11529",
+  "icon_256x256.4661d370dd248c9f9d48e78c8a07776d.png": "4661d370dd248c9f9d48e78c8a07776d",
+  "icon_96x96.1c0003f895382900e1a8ce6fa0a1b672.png": "1c0003f895382900e1a8ce6fa0a1b672",
+  "index.html": "815923a35141a67de6d43db0858e1365",
+  "main.c72487abd12a3ca6d343.css": "5f622c70ad714c19d4d4ff863401721f",
+  "main.c72487abd12a3ca6d343.js": "90e74906e1a8e4c29088a2261ad94ac4",
+  "manifest.04da2eac0dbe51865ee7.js": "01c8731923a46c30aaed248b3d094785",
+  "manifest.bc9f52edf87c052e960e4516d360c190.json": "bc9f52edf87c052e960e4516d360c190",
+}
+`;
+
+exports[`Compiler (elm) should build the example with config prerender-disabled.json 1`] = `
+Object {
+  "b02330cbe0a6272c907bdb4e12b97b7c.jpg": "be5bdc38e858972b37353622a1079182",
+  "elm.d138c88ed3811a39d525.js": "87536348363f9cd55f9930f67fe376b2",
+  "index.html": "ef56a0388822659f514e73075a9dbcc7",
+  "main.c72487abd12a3ca6d343.css": "5f622c70ad714c19d4d4ff863401721f",
+  "main.c72487abd12a3ca6d343.js": "90e74906e1a8e4c29088a2261ad94ac4",
+  "manifest.04da2eac0dbe51865ee7.js": "01c8731923a46c30aaed248b3d094785",
+}
+`;
