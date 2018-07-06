@@ -10,7 +10,7 @@
     "packages/*"
   ],
   "devDependencies": {
-    "workspace-release": "^0.4.3",
+    "workspace-release": "^0.4.4",
     "wsrun": "^2.2.1"
   }
 }
