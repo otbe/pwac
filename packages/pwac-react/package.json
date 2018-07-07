@@ -32,7 +32,8 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "lint": "prettier-tslint check '{src,tests}/**/*.ts'",
-    "lint:fix": "prettier-tslint fix '{src,tests}/**/*.ts'"
+    "lint:fix": "prettier-tslint fix '{src,tests}/**/*.ts'",
+    "preversion": "yarn build"
   },
   "peerDependencies": {
     "react": "^16.0.0"

@@ -21,7 +21,6 @@ jobs:
   include:
     - stage: deploy
       script:
-        - yarn build
         - if [ -n "$TRAVIS_TAG" ]; then node node_modules/.bin/workspace-publish; fi
       node: '9'
 
