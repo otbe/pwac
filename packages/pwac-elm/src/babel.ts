@@ -23,7 +23,10 @@ export const getTsRule = (
           modules: production ? false : undefined
         }
       ],
-      ['@babel/preset-stage-0', { decoratorsLegacy: true }],
+      [
+        '@babel/preset-stage-0',
+        { decoratorsLegacy: true, pipelineProposal: 'minimal' }
+      ],
       '@babel/preset-typescript'
     ]
   }

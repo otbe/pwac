@@ -16,9 +16,6 @@ test().then(x => console.log('async stuff', x));
 
 export default () => (
   <div className={bar}>
-    {(() => {
-      throw new Error('foo');
-    })()}
     bar <LazyBaz />
   </div>
 );
