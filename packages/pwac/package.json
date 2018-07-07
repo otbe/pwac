@@ -1,6 +1,6 @@
 {
   "name": "pwac",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "opinionated PWA compiler for multiple environments",
   "keywords": [
     "TypeScript",
