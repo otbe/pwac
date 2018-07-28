@@ -1,7 +1,12 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
 
 export const htmlWebpackplugin = new HtmlWebpackPlugin({
   template: 'src/index.html'
+});
+
+export const scriptExtHtmlWebpackPlugin = new ScriptExtHtmlWebpackPlugin({
+  defaultAttribute: 'defer'
 });
 
 export const resolve = {

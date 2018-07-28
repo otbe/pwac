@@ -1,4 +1,9 @@
-import { resolve, htmlWebpackplugin, entry } from './common';
+import {
+  resolve,
+  htmlWebpackplugin,
+  entry,
+  scriptExtHtmlWebpackPlugin
+} from './common';
 import { getTsRule } from './babel';
 import * as webpack from 'webpack';
 import { getImageRule } from './image';
@@ -38,6 +43,7 @@ export const prod = (config: ReactConfig): webpack.Configuration => ({
     new webpack.HashedModuleIdsPlugin(),
     new webpack.optimize.ModuleConcatenationPlugin(),
     htmlWebpackplugin,
+    scriptExtHtmlWebpackPlugin,
     new MiniCssExtractPlugin({
       filename: '[name].[chunkHash].css'
     }),

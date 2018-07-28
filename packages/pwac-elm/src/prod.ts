@@ -1,5 +1,10 @@
 import * as webpack from 'webpack';
-import { entry, ElmConfig, htmlWebpackplugin } from './common';
+import {
+  entry,
+  ElmConfig,
+  htmlWebpackplugin,
+  scriptExtHtmlWebpackPlugin
+} from './common';
 import { resolve } from './common';
 import { getOptimization } from './optimization';
 import { getCssRule } from './css';
@@ -38,6 +43,7 @@ export const prod = (config: ElmConfig): webpack.Configuration => ({
     new webpack.HashedModuleIdsPlugin(),
     new webpack.optimize.ModuleConcatenationPlugin(),
     htmlWebpackplugin,
+    scriptExtHtmlWebpackPlugin,
     new MiniCssExtractPlugin({
       filename: '[name].[chunkHash].css'
     }),

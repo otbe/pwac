@@ -71,6 +71,7 @@
     "postcss-loader": "^2.1.4",
     "prerender-spa-plugin": "^3.2.1",
     "responsive-loader": "^1.1.0",
+    "script-ext-html-webpack-plugin": "^2.0.1",
     "sharp": "^0.20.5",
     "style-loader": "^0.21.0",
     "typescript": "^2.9.2",

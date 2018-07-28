@@ -1,4 +1,9 @@
-import { resolve, htmlWebpackplugin, entry } from './common';
+import {
+  resolve,
+  htmlWebpackplugin,
+  entry,
+  scriptExtHtmlWebpackPlugin
+} from './common';
 import { getTsRule } from './babel';
 import * as webpack from 'webpack';
 import { getImageRule } from './image';
@@ -25,6 +30,7 @@ export const dev = (config: ReactConfig): webpack.Configuration => ({
 
   plugins: [
     htmlWebpackplugin,
+    scriptExtHtmlWebpackPlugin,
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin()
   ]

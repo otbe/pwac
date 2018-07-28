@@ -3,7 +3,13 @@ import { getCssRule } from './css';
 import { getElmRule } from './elm';
 import { getTsRule } from './babel';
 import { getAssetRule } from './assets';
-import { resolve, entry, ElmConfig, htmlWebpackplugin } from './common';
+import {
+  resolve,
+  entry,
+  ElmConfig,
+  htmlWebpackplugin,
+  scriptExtHtmlWebpackPlugin
+} from './common';
 import { getOptimization } from './optimization';
 
 export const dev = (config: ElmConfig): webpack.Configuration => ({
@@ -24,6 +30,7 @@ export const dev = (config: ElmConfig): webpack.Configuration => ({
 
   plugins: [
     htmlWebpackplugin,
+    scriptExtHtmlWebpackPlugin,
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin()
   ]
