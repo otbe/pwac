@@ -6,7 +6,8 @@ export const scriptExtHtmlWebpackPlugin = new ScriptExtHtmlWebpackPlugin({
 });
 
 export const htmlWebpackplugin = new HtmlWebpackPlugin({
-  template: 'src/index.html'
+  template: 'src/index.html',
+  inject: 'head'
 });
 
 export const resolve = {
