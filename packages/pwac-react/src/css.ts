@@ -2,6 +2,7 @@ import { ReactConfig } from './common';
 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const postcssPresetEnv = require('postcss-preset-env');
+const atImport = require('postcss-import');
 
 const styleLoader = {
   loader: 'style-loader',
@@ -31,6 +32,7 @@ export const getCssRule = (
       loader: 'postcss-loader',
       options: {
         plugins: [
+          atImport(),
           postcssPresetEnv({
             stage: 0,
             browsers
