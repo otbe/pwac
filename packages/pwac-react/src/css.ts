@@ -1,7 +1,7 @@
 import { ReactConfig } from './common';
 
-const autoprefixer = require('autoprefixer');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const postcssPresetEnv = require('postcss-preset-env');
 
 const styleLoader = {
   loader: 'style-loader',
@@ -31,7 +31,8 @@ export const getCssRule = (
       loader: 'postcss-loader',
       options: {
         plugins: [
-          autoprefixer({
+          postcssPresetEnv({
+            stage: 0,
             browsers
           })
         ]
