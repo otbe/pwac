@@ -15,7 +15,7 @@ export default (env: any = {}) => {
 
   config.output = output;
 
-  config.devtool = 'inline-source-map';
+  config.devtool = 'eval-source-map';
 
   config.context = context;
 
