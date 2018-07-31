@@ -14,7 +14,14 @@ export const getOptimization = (
       }
     : {}),
   minimizer: production
-    ? [new UglifyJsPlugin({ parallel: true }), new OptimizeCSSAssetsPlugin({})]
+    ? [
+        new UglifyJsPlugin({
+          cache: true,
+          parallel: true,
+          sourceMap: true
+        }),
+        new OptimizeCSSAssetsPlugin({})
+      ]
     : [],
   splitChunks: {
     chunks: 'async',

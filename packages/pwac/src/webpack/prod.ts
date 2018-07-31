@@ -31,5 +31,7 @@ export default () => {
 
   config.stats = stats;
 
+  config.devtool = 'source-map';
+
   return modifierFn(config);
 };

@@ -15,7 +15,12 @@ export const getOptimization = (
     : {}),
   minimizer: production
     ? [
-        new UglifyJsPlugin({ exclude: 'elm', parallel: true }),
+        new UglifyJsPlugin({
+          exclude: 'elm',
+          cache: true,
+          parallel: true,
+          sourceMap: true
+        }),
         new UglifyJsPlugin({
           include: 'elm',
           parallel: true,
