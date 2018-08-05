@@ -20,5 +20,6 @@ export const stats = {
 export const context = process.cwd();
 
 export const output = {
-  filename: 'app.js'
+  filename: 'app.js',
+  publicPath: '/'
 };
