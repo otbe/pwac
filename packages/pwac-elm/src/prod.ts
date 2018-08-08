@@ -42,7 +42,7 @@ export const prod = (config: ElmConfig): webpack.Configuration => ({
   plugins: [
     new webpack.HashedModuleIdsPlugin(),
     new webpack.optimize.ModuleConcatenationPlugin(),
-    htmlWebpackplugin,
+    htmlWebpackplugin(config.manifest),
     scriptExtHtmlWebpackPlugin,
     new MiniCssExtractPlugin({
       filename: '[name].[chunkHash].css'

@@ -1,10 +1,12 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
 
-export const htmlWebpackplugin = new HtmlWebpackPlugin({
-  template: 'src/index.html',
-  inject: 'head'
-});
+export const htmlWebpackplugin = (manifest: ReactConfig['manifest']) =>
+  new HtmlWebpackPlugin({
+    template: 'src/index.html',
+    inject: 'head',
+    title: (manifest && manifest.name) || 'PWAC'
+  });
 
 export const scriptExtHtmlWebpackPlugin = new ScriptExtHtmlWebpackPlugin({
   defaultAttribute: 'defer'
@@ -32,5 +34,6 @@ export type ReactConfig = {
           src: string;
           sizes: Array<number>;
         }>;
+        related_applications: Array<{ platform: string; url: string }>;
       };
 };

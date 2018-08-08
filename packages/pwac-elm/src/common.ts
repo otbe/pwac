@@ -5,10 +5,12 @@ export const scriptExtHtmlWebpackPlugin = new ScriptExtHtmlWebpackPlugin({
   defaultAttribute: 'defer'
 });
 
-export const htmlWebpackplugin = new HtmlWebpackPlugin({
-  template: 'src/index.html',
-  inject: 'head'
-});
+export const htmlWebpackplugin = (manifest: ElmConfig['manifest']) =>
+  new HtmlWebpackPlugin({
+    template: 'src/index.html',
+    inject: 'head',
+    title: (manifest && manifest.name) || 'PWAC'
+  });
 
 export const resolve = {
   extensions: ['.ts', '.tsx', '.js']
@@ -34,5 +36,6 @@ export type ElmConfig = {
           src: string;
           sizes: Array<number>;
         }>;
+        related_applications: Array<{ platform: string; url: string }>;
       };
 };

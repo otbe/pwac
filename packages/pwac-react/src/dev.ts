@@ -29,7 +29,7 @@ export const dev = (config: ReactConfig): webpack.Configuration => ({
   optimization: getOptimization(false),
 
   plugins: [
-    htmlWebpackplugin,
+    htmlWebpackplugin(config.manifest),
     scriptExtHtmlWebpackPlugin,
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin()

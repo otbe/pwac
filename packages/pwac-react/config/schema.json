@@ -64,6 +64,20 @@
                         "name": {
                             "type": "string"
                         },
+                        "related_applications": {
+                            "items": {
+                                "properties": {
+                                    "platform": {
+                                        "type": "string"
+                                    },
+                                    "url": {
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            },
+                            "type": "array"
+                        },
                         "short_name": {
                             "type": "string"
                         }
