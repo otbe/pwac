@@ -54,7 +54,7 @@
     "prettier-tslint": "^0.4.0",
     "pwac": "*",
     "pwac-elm": "*",
-    "typescript": "^2.9.2"
+    "typescript": "^3.0.1"
   },
   "dependencies": {
     "normalize.css": "^8.0.0"
