@@ -1,6 +1,6 @@
 {
   "name": "pwac-elm",
-  "version": "1.4.1",
+  "version": "2.0.0",
   "description": "elm environment for pwac",
   "keywords": [
     "TypeScript",
