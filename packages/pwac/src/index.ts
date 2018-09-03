@@ -42,14 +42,10 @@ program
   .command('serve')
   .option('-p <port>')
   .action(async e =>
-    spawn(
-      'serve',
-      ['-s', '-c 0', e.P ? `-p ${e.P}` : null, 'dist/'].filter(x => !!x),
-      {
-        cwd,
-        stdio: 'inherit'
-      }
-    )
+    spawn('pushstate-server', ['dist', `${e.P || 8080}`].filter(x => !!x), {
+      cwd,
+      stdio: 'inherit'
+    })
   );
 
 program.on('command:*', function() {
