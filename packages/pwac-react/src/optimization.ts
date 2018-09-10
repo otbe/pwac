@@ -34,7 +34,7 @@ export const getOptimization = (
         test: /[\\/]node_modules[\\/]/,
         name: 'vendors',
         priority: -10,
-        chunks: 'all'
+        chunks: 'initial'
       }
     }
   }
