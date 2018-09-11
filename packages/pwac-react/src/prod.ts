@@ -87,6 +87,7 @@ export const prod = (config: ReactConfig): webpack.Configuration => ({
         ]
       : []),
     new OfflinePlugin({
+      appShell: '/',
       version: '[hash]',
       autoUpdate: true, // one hour
       externals: [...(config.prerender ? config.prerender.routes : ['/'])],
