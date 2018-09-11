@@ -20,3 +20,5 @@ declare module '*.png' {
   const image: ResponsiveImage;
   export = image;
 }
+
+declare const PWAC_CONFIG_TEST: string;

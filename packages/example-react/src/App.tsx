@@ -42,4 +42,6 @@ const App = () => (
   </BrowserRouter>
 );
 
+console.log(PWAC_CONFIG_TEST);
+
 export default hot(module)(App);

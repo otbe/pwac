@@ -4,6 +4,7 @@ import { snapshot } from 'snapshot-dir';
 
 describe('Compiler (react)', () => {
   const cwd = resolve(__dirname, '..', '..', 'example-react');
+  process.env.PWAC_CONFIG_TEST = 'test_config';
 
   it(`should build the example with config from package.json`, async () => {
     try {

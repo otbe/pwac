@@ -4,7 +4,8 @@ import {
   stats,
   context,
   reporterPlugin,
-  output
+  output,
+  spaConfig
 } from './common';
 import { join } from 'path';
 import { loadConfig } from '../env';
@@ -26,6 +27,7 @@ export default () => {
 
   config.plugins.unshift(cleanDistPlugin);
   config.plugins.push(reporterPlugin);
+  config.plugins.push(spaConfig);
 
   config.mode = 'production';
 

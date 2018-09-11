@@ -1,6 +1,7 @@
 import * as program from 'commander';
-import { execSync, spawn } from 'npm-run';
+import { spawn } from 'npm-run';
 import { resolve } from 'path';
+import { check } from './check';
 
 const cwd = process.cwd();
 
@@ -21,24 +22,12 @@ program
     );
   });
 
-program.command('build').action(async () => {
-  try {
-    execSync('tcm src/ -c -s');
-  } catch (e) {
-    console.log(e.output[1].toString());
-    process.exit(1);
-    return;
-  }
+program.command('check').action(async () => {
+  check();
+});
 
-  try {
-    execSync('tsc --noEmit', {
-      cwd
-    });
-  } catch (e) {
-    console.log(e.output[1].toString());
-    process.exit(1);
-    return;
-  }
+program.command('build').action(async () => {
+  check();
 
   spawn('webpack', ['--config', resolve(__dirname, 'webpack', 'prod.js')], {
     cwd,

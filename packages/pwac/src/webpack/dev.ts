@@ -1,5 +1,11 @@
 import { getWebpackModifierFn, getProjectConfig } from '../project';
-import { reporterPlugin, cleanDistPlugin, context, output } from './common';
+import {
+  reporterPlugin,
+  cleanDistPlugin,
+  context,
+  output,
+  spaConfig
+} from './common';
 import { join } from 'path';
 import { loadConfig } from '../env';
 
@@ -28,7 +34,8 @@ export default (env: any = {}) => {
         messages: ['You application is running here http://localhost:8080']
       }
     }),
-    ...(env.PWAC_ANALYZE_BUNDLE ? [new BundleAnalyzerPlugin()] : [])
+    ...(env.PWAC_ANALYZE_BUNDLE ? [new BundleAnalyzerPlugin()] : []),
+    spaConfig
   );
 
   config.mode = 'development';
