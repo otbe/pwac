@@ -10,3 +10,5 @@ elm-stuff/
 lerna-debug.log
 
 .vscode
+
+*css.d.ts

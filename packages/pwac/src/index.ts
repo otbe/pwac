@@ -23,6 +23,14 @@ program
 
 program.command('build').action(async () => {
   try {
+    execSync('tcm src/ -c -s');
+  } catch (e) {
+    console.log(e.output[1].toString());
+    process.exit(1);
+    return;
+  }
+
+  try {
     execSync('tsc --noEmit', {
       cwd
     });

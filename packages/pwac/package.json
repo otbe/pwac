@@ -60,6 +60,7 @@
     "npm-run": "^5.0.1",
     "pushstate-server": "^3.0.1",
     "resolve-cwd": "^2.0.0",
+    "typed-css-modules": "^0.3.5",
     "webpack": "^4.17.1",
     "webpack-bundle-analyzer": "^2.13.1",
     "webpack-cli": "^3.1.0",
