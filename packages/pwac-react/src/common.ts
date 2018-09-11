@@ -23,6 +23,7 @@ export type ReactConfig = {
   browsers: Array<string>;
   images: false | { sizes: Array<number> };
   prerender: false | { routes: Array<string> };
+  preloadLazyChunks: boolean;
   manifest:
     | false
     | {

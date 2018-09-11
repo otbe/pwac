@@ -10,6 +10,7 @@ describe('Config', () => {
     'manifest',
     'disabled',
     'prerender-disabled',
+    'preload-lazy-chunks',
     'image-optimization-disabled'
   ].forEach(c =>
     describe(`${c}.json`, () => {

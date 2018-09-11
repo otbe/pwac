@@ -88,8 +88,21 @@ export const prod = (config: ReactConfig): webpack.Configuration => ({
       : []),
     new OfflinePlugin({
       appShell: '/',
+      version: '[hash]',
       autoUpdate: true, // one hour
       externals: [...(config.prerender ? config.prerender.routes : [])],
+      caches: {
+        main: [
+          'main.*.css',
+          'main.*.js',
+          'vendors.*.css',
+          'vendors.*.js',
+          'manifest*.js',
+          'manifest.*.json'
+        ],
+        additional: config.preloadLazyChunks ? ['*.*.js', '*.*.css'] : [],
+        optional: [':rest:']
+      },
       ServiceWorker: {
         events: true
       }

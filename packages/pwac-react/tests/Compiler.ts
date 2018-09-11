@@ -14,10 +14,9 @@ describe('Compiler (react)', () => {
       expect(e).toBeUndefined();
     }
 
-    const { 'sw.js': SW, ...r } = await snapshot(join(cwd, 'dist'));
+    const result = await snapshot(join(cwd, 'dist'));
 
-    expect(SW).toBeDefined();
-    expect(r).toMatchSnapshot();
+    expect(result).toMatchSnapshot();
   });
 
   [
@@ -25,6 +24,7 @@ describe('Compiler (react)', () => {
     'disabled',
     'manifest',
     'prerender-disabled',
+    'preload-lazy-chunks',
     'image-optimization-disabled'
   ].forEach(c => {
     it(`should build the example with config ${c}.json`, async () => {
@@ -40,10 +40,9 @@ describe('Compiler (react)', () => {
         expect(e).toBeUndefined();
       }
 
-      const { 'sw.js': SW, ...r } = await snapshot(join(cwd, 'dist'));
+      const result = await snapshot(join(cwd, 'dist'));
 
-      expect(SW).toBeDefined();
-      expect(r).toMatchSnapshot();
+      expect(result).toMatchSnapshot();
     });
   });
 });
