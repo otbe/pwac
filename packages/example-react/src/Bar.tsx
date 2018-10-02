@@ -1,5 +1,5 @@
 import React from 'react';
-import { bar } from './bar.css';
+import { bar, foo } from './bar.css';
 import Loadable from 'react-loadable';
 
 const LazyBaz = Loadable({
@@ -15,7 +15,7 @@ const test = async () => {
 test().then(x => console.log('async stuff', x));
 
 export default () => (
-  <div className={bar}>
+  <div className={`${bar} ${foo}`}>
     bar <LazyBaz />
   </div>
 );

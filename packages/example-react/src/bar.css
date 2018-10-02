@@ -1,6 +1,26 @@
 .bar {
   display: flex;
   color: red;
+
+  @media screen {
+    color: yellow;
+  }
+
+  @keyframes b {
+    from {
+      opacity: 1;
+    }
+
+    to {
+      opacity: 0;
+    }
+  }
+
+  &.foo {
+    @media screen {
+      color: yellow;
+    }
+  }
 }
 
 ::placeholder {

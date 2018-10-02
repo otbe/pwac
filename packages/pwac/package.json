@@ -1,6 +1,6 @@
 {
   "name": "pwac",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "opinionated PWA compiler for multiple environments",
   "keywords": [
     "TypeScript",
@@ -38,33 +38,33 @@
     "preversion": "yarn build"
   },
   "devDependencies": {
-    "@types/jest": "^23.3.1",
-    "ajv": "^6.5.3",
+    "@types/jest": "^23.3.2",
+    "ajv": "^6.5.4",
     "ajv-keywords": "^3.2.0",
-    "jest": "^23.5.0",
-    "prettier": "^1.14.2",
+    "jest": "^23.6.0",
+    "prettier": "^1.14.3",
     "prettier-tslint": "^0.4.0",
     "snapshot-dir": "^1.1.2",
-    "ts-jest": "^23.1.4",
-    "typescript": "^3.0.1"
+    "ts-jest": "^23.10.3",
+    "typescript": "^3.1.1"
   },
   "dependencies": {
     "@types/lodash.memoize": "^4.1.4",
     "@types/lodash.merge": "^4.6.4",
-    "@types/webpack-dev-server": "^2.9.6",
+    "@types/webpack-dev-server": "^3.1.1",
     "clean-webpack-plugin": "^0.1.19",
-    "commander": "^2.17.1",
+    "commander": "^2.18.0",
     "friendly-errors-webpack-plugin": "^1.7.0",
     "lodash.memoize": "^4.1.2",
     "lodash.merge": "^4.6.1",
     "npm-run": "^5.0.1",
     "pushstate-server": "^3.0.1",
     "resolve-cwd": "^2.0.0",
-    "typed-css-modules": "^0.3.5",
-    "webpack": "^4.17.1",
-    "webpack-bundle-analyzer": "^2.13.1",
-    "webpack-cli": "^3.1.0",
-    "webpack-dev-server": "^3.1.6",
+    "typed-css-modules": "^0.3.6",
+    "webpack": "^4.20.2",
+    "webpack-bundle-analyzer": "^3.0.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9",
     "webpackbar": "^2.6.3"
   }
 }

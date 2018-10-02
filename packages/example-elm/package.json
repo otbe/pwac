@@ -49,12 +49,12 @@
     }
   },
   "devDependencies": {
-    "elm-format": "^0.8.0",
-    "prettier": "^1.14.2",
+    "elm-format": "^0.8.1",
+    "prettier": "^1.14.3",
     "prettier-tslint": "^0.4.0",
     "pwac": "*",
     "pwac-elm": "*",
-    "typescript": "^3.0.1"
+    "typescript": "^3.1.1"
   },
   "dependencies": {
     "normalize.css": "^8.0.0"
