@@ -31,7 +31,7 @@ export const prod = (config: ReactConfig): webpack.Configuration => ({
   module: {
     rules: [
       getTsRule(true, config.browsers),
-      getCssRule(true, config.browsers),
+      getCssRule(true, config.browsers, config.cssFeatures),
       getAssetRule(),
       getImageRule(config.images)
     ]

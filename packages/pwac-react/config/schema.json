@@ -7,6 +7,22 @@
             },
             "type": "array"
         },
+        "cssFeatures": {
+            "additionalProperties": {
+                "anyOf": [
+                    {
+                        "additionalProperties": {
+                            "type": "string"
+                        },
+                        "type": "object"
+                    },
+                    {
+                        "type": "boolean"
+                    }
+                ]
+            },
+            "type": "object"
+        },
         "env": {
             "enum": [
                 "react"

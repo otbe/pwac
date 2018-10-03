@@ -27,6 +27,9 @@
         "/bar"
       ]
     },
+    "cssFeatures": {
+      "color-mod-function": { "unresolved": "warn" }
+    },
     "manifest": {
       "name": "My Progressive Web App",
       "short_name": "MyPWA",

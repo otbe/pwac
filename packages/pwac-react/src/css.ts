@@ -14,7 +14,8 @@ const styleLoader = {
 
 export const getCssRule = (
   production: boolean,
-  browsers: ReactConfig['browsers']
+  browsers: ReactConfig['browsers'],
+  features: ReactConfig['cssFeatures']
 ) => ({
   test: /\.css$/,
   use: [
@@ -37,7 +38,8 @@ export const getCssRule = (
           nested(),
           postcssPresetEnv({
             stage: 0,
-            browsers
+            browsers,
+            features
           })
         ]
       }

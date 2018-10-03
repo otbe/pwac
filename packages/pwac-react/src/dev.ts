@@ -20,7 +20,7 @@ export const dev = (config: ReactConfig): webpack.Configuration => ({
   module: {
     rules: [
       getTsRule(false, config.browsers),
-      getCssRule(false, config.browsers),
+      getCssRule(false, config.browsers, config.cssFeatures),
       getAssetRule(),
       getImageRule(config.images)
     ]
