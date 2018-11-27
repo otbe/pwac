@@ -2,15 +2,15 @@
   "private": true,
   "scripts": {
     "release": "workspace-version",
-    "build": "yarn wsrun build --stages --exclude example-react --exclude example-elm",
-    "lint": "yarn wsrun lint --fast-exit",
-    "test": "yarn wsrun test --serial --exclude-missing --fast-exit"
+    "build": "yarn wsrun --stages --exclude example-react build",
+    "lint": "yarn wsrun --fast-exit lint",
+    "test": "yarn wsrun --serial --exclude-missing --fast-exit test"
   },
   "workspaces": [
     "packages/*"
   ],
   "devDependencies": {
     "workspace-release": "^0.4.5",
-    "wsrun": "^2.2.1"
+    "wsrun": "^3.4.0"
   }
 }

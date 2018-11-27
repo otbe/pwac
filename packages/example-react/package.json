@@ -3,8 +3,8 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "watch": "pwac watch",
-    "build": "pwac build",
+    "watch": "PWAC_CONFIG_TEST=foo pwac watch",
+    "build": "PWAC_CONFIG_TEST=foo pwac build",
     "lint": "prettier-tslint check '{src,tests}/**/*.{ts,tsx}'",
     "lint:fix": "prettier-tslint fix '{src,tests}/**/*.{ts,tsx}'"
   },
@@ -28,7 +28,9 @@
       ]
     },
     "cssFeatures": {
-      "color-mod-function": { "unresolved": "warn" }
+      "color-mod-function": {
+        "unresolved": "warn"
+      }
     },
     "manifest": {
       "name": "My Progressive Web App",
@@ -49,19 +51,19 @@
     }
   },
   "devDependencies": {
-    "prettier": "^1.14.2",
+    "prettier": "^1.15.2",
     "prettier-tslint": "^0.4.0",
     "pwac": "*",
     "pwac-react": "*"
   },
   "dependencies": {
-    "@types/react": "^16.4.14",
-    "@types/react-dom": "^16.0.8",
-    "@types/react-loadable": "^5.4.1",
+    "@types/react": "^16.7.7",
+    "@types/react-dom": "^16.0.10",
+    "@types/react-loadable": "^5.4.2",
     "@types/react-router-dom": "^4.3.1",
-    "normalize.css": "^8.0.0",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
+    "normalize.css": "^8.0.1",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
     "react-loadable": "^5.5.0",
     "react-router-dom": "^4.3.1"
   }
