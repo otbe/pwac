@@ -41,7 +41,6 @@ export const prod = (config: ReactConfig): webpack.Configuration => ({
 
   plugins: [
     new webpack.HashedModuleIdsPlugin(),
-    new webpack.optimize.ModuleConcatenationPlugin(),
     htmlWebpackplugin(config.manifest),
     scriptExtHtmlWebpackPlugin,
     new MiniCssExtractPlugin({

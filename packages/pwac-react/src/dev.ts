@@ -31,7 +31,6 @@ export const dev = (config: ReactConfig): webpack.Configuration => ({
   plugins: [
     htmlWebpackplugin(config.manifest),
     scriptExtHtmlWebpackPlugin,
-    new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin()
   ]
 });
