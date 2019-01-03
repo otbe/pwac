@@ -48,6 +48,7 @@ export default (env: any = {}) => {
     quiet: true,
     historyApiFallback: true,
     host: '0.0.0.0',
+    disableHostCheck: true,
     port: 8080
   };
 
