@@ -23,7 +23,12 @@ export type ReactConfig = {
   browsers: Array<string>;
   images: false | { sizes: Array<number> };
   prerender: false | { routes: Array<string> };
-  preloadLazyChunks: boolean;
+  offline:
+    | false
+    | {
+        preloadLazyChunks?: boolean;
+        autoUpdate?: number;
+      };
   cssFeatures?: { [key: string]: boolean | { [key: string]: string } };
   manifest:
     | false

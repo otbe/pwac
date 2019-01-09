@@ -85,27 +85,37 @@ export const prod = (config: ReactConfig): webpack.Configuration => ({
           })
         ]
       : []),
-    new OfflinePlugin({
-      appShell: '/',
-      version: '[hash]',
-      autoUpdate: true, // one hour
-      externals: [...(config.prerender ? config.prerender.routes : ['/'])],
-      safeToUseOptionalCaches: true,
-      caches: {
-        main: [
-          'main.*.css',
-          'main.*.js',
-          'vendors.*.css',
-          'vendors.*.js',
-          'manifest*.js',
-          'manifest.*.json'
-        ],
-        additional: config.preloadLazyChunks ? ['*.*.js', '*.*.css'] : [],
-        optional: [':rest:', ':externals:']
-      },
-      ServiceWorker: {
-        events: true
-      }
-    })
+    ...(config.offline
+      ? [
+          new OfflinePlugin({
+            appShell: '/',
+            version: '[hash]',
+            autoUpdate: config.offline.autoUpdate || true,
+            externals: [
+              '/',
+              ...(config.prerender ? config.prerender.routes : [])
+            ],
+            safeToUseOptionalCaches: true,
+            caches: {
+              main: [
+                'main.*.css',
+                'main.*.js',
+                'vendors.*.css',
+                'vendors.*.js',
+                'manifest*.js',
+                'manifest.*.json',
+                ':externals:'
+              ],
+              additional: config.offline.preloadLazyChunks
+                ? ['*.*.js', '*.*.css']
+                : [],
+              optional: [':rest:']
+            },
+            ServiceWorker: {
+              events: true
+            }
+          })
+        ]
+      : [])
   ]
 });

@@ -108,8 +108,26 @@
                 }
             ]
         },
-        "preloadLazyChunks": {
-            "type": "boolean"
+        "offline": {
+            "anyOf": [
+                {
+                    "properties": {
+                        "autoUpdate": {
+                            "type": "number"
+                        },
+                        "preloadLazyChunks": {
+                            "type": "boolean"
+                        }
+                    },
+                    "type": "object"
+                },
+                {
+                    "enum": [
+                        false
+                    ],
+                    "type": "boolean"
+                }
+            ]
         },
         "prerender": {
             "anyOf": [
