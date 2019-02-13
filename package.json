@@ -11,6 +11,6 @@
   ],
   "devDependencies": {
     "workspace-release": "^0.4.5",
-    "wsrun": "^3.4.0"
+    "wsrun": "^3.6.4"
   }
 }
